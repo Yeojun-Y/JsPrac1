@@ -14,6 +14,7 @@ console.log(globalName);
  //항상 제일 위로 끌어올려주는 것을 말한다. 
  // var 말고 let을 사용하자
 
- // 3. constants
+ // 3. constants  (읽기만 가능)
  // const 선언 한 후에는 값을 변경할 수 없다.
  
+ // 4. varialbe
