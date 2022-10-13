@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="box.css">
+</head>
+<body>
+    <div class="box">
+        <div class="alertBox" id="alert">
+            <p>Alert 박스</p>
+            <button onclick="buttonSelc('alert','none')">닫기</button>
+        </div>
+        <button onclick="buttonSelc('alert', 'block')" id="btn1">열기</button>
+        <div class="alertBox2" id="alert2">
+            <ud>
+                <p>enterPassword</p>
+                <input type="password" id="Password">
+            </ud>
+            <button onclick="" id="btn2">enter</button>
+            <button onclick="buttonSelc('alert2','none')">닫기</button>
+        </div>
+        <button onclick="buttonSelc('alert2','block')" id="btn2">버튼2</button>
+    </div>
+</body>
+<script>
+    function buttonSelc(aa,bb) {
+        document.getElementById(aa).style.display = bb;
+    }
+</script>
+</html>

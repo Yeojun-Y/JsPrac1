@@ -1,0 +1,18 @@
+.alertBox {
+    background-color: rgb(180, 236, 236);
+    padding: 2%;
+    border-radius: 15px;
+    width: 70%;
+    /* display: none;  */
+}
+
+.box button {
+    background-color: darkkhaki;
+}
+
+.alertBox2 {
+    background-color: cornflowerblue;
+    padding: 2%;
+    border-radius: 15px;
+    width: 70%;
+}
