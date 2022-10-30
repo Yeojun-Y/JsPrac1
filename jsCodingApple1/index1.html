@@ -1,79 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="box.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="page" id="page">
-        <p>@@@@@@@@@</p>
-        <div class="box">
-            <div class="alertBox" id="alert">
-                <p>Alert 박스</p>
-                <button onclick="buttonSelc('alert','none')">닫기</button>
-            </div>
-            <button onclick="buttonSelc('alert', 'block')" id="btn1">열기</button>
-            <p>@@@@@@@@@</p>
-            <div class="alertBox2" id="alert2">
-                <ud>
-                    <p>enterPassword</p>
-                    <input type="password" id="Password" />
-                </ud>
-                <button onclick="" id="btn2">enter</button>
-                <button onclick="buttonSelc('alert2','none')">닫기</button>
-            </div>
-            <button onclick="buttonSelc('alert2','block')" id="btn2">버튼2</button>
+      <p>@@@@@@@@@</p>
+      <div class="box">
+        <div class="alertBox" id="alert">
+          <p>Alert 박스</p>
+          <button onclick="buttonSelc('alert','none')">닫기</button>
         </div>
+        <button onclick="buttonSelc('alert', 'block')" id="btn1">열기</button>
         <p>@@@@@@@@@</p>
+        <div class="alertBox2" id="alert2">
+          <ud>
+            <p>enterPassword</p>
+            <input type="password" id="Password" />
+          </ud>
+          <button onclick="" id="btn2">enter</button>
+          <button onclick="buttonSelc('alert2','none')">닫기</button>
+        </div>
+        <button onclick="buttonSelc('alert2','block')" id="btn2">버튼2</button>
+      </div>
+      <p>@@@@@@@@@</p>
 
-        <div class="btn1" id="btnid1">
-            <p>아이디를 다시 입력하세요</p>
-        </div>
-        <div class="btn2" id="btnid2">
-            <p>비밀번호를 다시 입력하세요</p>
-        </div>
-        <p>@@@@@@@@@</p>
+      <div class="btn1" id="btnid1">
+        <p>아이디를 다시 입력하세요</p>
+      </div>
+      <div class="btn2" id="btnid2">
+        <p>비밀번호를 다시 입력하세요</p>
+      </div>
+      <p>@@@@@@@@@</p>
 
-        <button onclick="alertmsg('btnid2','btnid1', 'none', 'block')" id="btnid1">btn1</button>
-        <button onclick="alertmsg('btnid1','btnid2', 'none', 'block')" id="btnid2">btn2</button>
-        <div class="btn3" id="btnid3">
-            <p id="pMsg1">아이디를 다시 또 다시 입력하세요</p>
-            <!-- <p id="pMsg2">비밀번호를 다시 또 다시 입력하세요</p> -->
-
-        </div>
-        <button onclick="changeMsg('아이디 재 입력')" id="btnid3">btn3</button>
-        <button onclick="changeMsg('비밀번호를 다시 또 다시 입력하세요')" id="btnid4">btn4</button>
-        <p>@@@@@@@@@</p>
+      <button
+        onclick="alertmsg('btnid2','btnid1', 'none', 'block')"
+        id="btnid1"
+      >
+        btn1
+      </button>
+      <button
+        onclick="alertmsg('btnid1','btnid2', 'none', 'block')"
+        id="btnid2"
+      >
+        btn2
+      </button>
+      <div class="btn3" id="btnid3">
+        <p id="pMsg1">아이디를 다시 또 다시 입력하세요</p>
+        <!-- <p id="pMsg2">비밀번호를 다시 또 다시 입력하세요</p> -->
+      </div>
+      <button onclick="changeMsg('아이디 재 입력')" id="btnid3">btn3</button>
+      <button
+        onclick="changeMsg('비밀번호를 다시 또 다시 입력하세요')"
+        id="btnid4"
+      >
+        btn4
+      </button>
+      <p>@@@@@@@@@</p>
     </div>
     <button id="close">버튼</button>
     <button id="open">버튼</button>
-
-</body>
-<script>
+  </body>
+  <script>
     function buttonSelc(aa, bb) {
-        document.getElementById(aa).style.display = bb;
+      document.getElementById(aa).style.display = bb;
     }
     function alertmsg(a, b, c, d) {
-        document.getElementById(a).style.display = c;
-        document.getElementById(b).style.display = d;
+      document.getElementById(a).style.display = c;
+      document.getElementById(b).style.display = d;
     }
     function changeMsg(a) {
-        document.getElementById('pMsg1').innerHTML = a;
-        // document.getElementById(a).style.display = 'block'
-        // document.getElementById(b).style.display = 'none'
+      document.getElementById("pMsg1").innerHTML = a;
+      // document.getElementById(a).style.display = 'block'
+      // document.getElementById(b).style.display = 'none'
     }
 
-    document.getElementById('close').addEventListener('click', function () {
-        document.getElementById('page').style.display = 'none';
-    })
-    document.getElementById('open').addEventListener('click', function () {
-        document.getElementById('page').style.display = 'block';
-    })
-</script>
-
+    document.getElementById("close").addEventListener("click", function () {
+      document.getElementById("page").style.display = "none";
+    });
+    document.getElementById("open").addEventListener("click", function () {
+      document.getElementById("page").style.display = "block";
+    });
+  </script>
 </html>
