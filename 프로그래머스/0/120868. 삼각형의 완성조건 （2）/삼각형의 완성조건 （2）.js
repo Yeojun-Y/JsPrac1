@@ -7,6 +7,8 @@ function solution(sides) {
     let upper = maxSides+minSides-1;
     let lower = maxSides-minSides+1;
     
-    return answer = upper - lower + 1;
+    answer = upper - lower + 1;
+    answer = 2*minSides - 1;
+    return answer;
      
 }
